@@ -1,0 +1,15 @@
+.Datepicker__calendar {
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Nunito', sans-serif;
+}
+
+.Datepicker__day--selected,
+.Datepicker__day--in-range {
+  background-color: #ef4444 !important;
+  color: white !important;
+}
+
+.Datepicker__month-navigation_button:hover {
+  background-color: #fee2e2 !important;
+}

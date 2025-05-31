@@ -1,0 +1,102 @@
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  max-width: 1390px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* ESTO ES CLAVE: Si el padre de sliderContainer (el div con h-[60vh] en Titulo)
+     tiene una altura, sliderContainer debe tomarla. */
+  height: 100%; /* Asegúrate de que toma la altura de su padre (el div con h-[60vh]) */
+}
+
+.sliderWrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%; /* CRÍTICO: El wrapper debe ocupar el 100% de la altura del sliderContainer */
+}
+
+.slide {
+  min-width: 100%; /* Cada slide ocupa el 100% del ancho del sliderContainer */
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* CRÍTICO: Cada slide debe ocupar el 100% de la altura del sliderWrapper */
+  position: relative; /* Mantener esto, aunque estés usando <img> nativo. Es una buena práctica. */
+}
+
+.slideImage {
+  width: 100%;
+  height: 100%; /* La imagen DEBE ocupar el 100% de la altura de su contenedor .slide */
+  display: block;
+  object-fit: cover; /* Esto es lo que quieres para "contener" la imagen */
+  object-position: center; /* Centra la imagen si hay espacio extra */
+  background-color: black; /* Esto te mostrará las barras si la imagen no llena el espacio */
+}
+
+.slideCaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.prevButton,
+.nextButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1.5em;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+ 
+}
+
+.prevButton:hover,
+.nextButton:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prevButton {
+  left: 10px;
+}
+
+.nextButton {
+  right: 10px;
+}
+
+.dotsContainer {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.activeDot {
+  background-color: white;
+}
