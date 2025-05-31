@@ -177,33 +177,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/*<div className="flex flex-col gap-12 border-b py-16 w-full">*/}
-            {/*  <div className="w-full flex flex-col md:flex-row items-center gap-8">*/}
-            {/*    <div className="w-1/3 md:w-1/6">*/}
-            {/*      <div className="relative w-2/3 mx-auto pt-[100%]">*/}
-            {/*        <Image src="/icons/breakfast.png" layout="fill" className="object-center object-contain"/>*/}
-            {/*      </div>*/}
-            {/*    </div>*/}
-            {/*    <div className="flex-grow md:w-5/6">*/}
-            {/*      <p className="font-medium">Desayuno bufete en cortesía</p>*/}
-            {/*      <p className="-ft-2">Un bufete completo en cortesía con menú creado por chef internacional, con*/}
-            {/*        estación*/}
-            {/*        de huevos al gusto de 7:00 a 11:00 am</p>*/}
-            {/*    </div>*/}
-            {/*  </div>*/}
-            {/*  <div className="w-full flex flex-col md:flex-row items-center gap-8">*/}
-            {/*    <div className="w-1/3 md:w-1/6">*/}
-            {/*      <div className="relative w-2/3 mx-auto pt-[100%]">*/}
-            {/*        <Image src="/icons/location.png" layout="fill" className="object-center object-contain"/>*/}
-            {/*      </div>*/}
-            {/*    </div>*/}
-            {/*    <div className="flex-grow md:w-5/6">*/}
-            {/*      <p className="font-medium">En ubicaciones estratégicas de la ciudad</p>*/}
-            {/*      <p className="-ft-2">Nuestros hoteles están ubicados en zonas industriales, de eventos o cerca de aeropuertos</p>*/}
-            {/*    </div>*/}
-            {/*  </div>*/}
-            {/*</div>*/}
-
             <div id="description" className="border-y py-16 w-full">
               <p dangerouslySetInnerHTML={{__html: description}}/>
             </div>
