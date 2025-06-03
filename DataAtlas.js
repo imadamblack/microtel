@@ -84,7 +84,7 @@ export const DataAtlas = [
     rate: 4.8,
     stars: '★★★★',
     ratings: 189,
-    mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.4943520948136!2d-103.4488361015852!3d20.586878901850287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842f54b8dc35bb6f%3A0xc5acad50c63f0fee!2sMicrotel%20Inn%20%26%20Suites%20by%20Wyndham%20Guadalajara%20Sur!5e0!3m2!1ses!2smx!4v1748705700000!5m2!1ses!2smx',
+    mapUrl: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4868.205999076312!2d-103.4493752!3d20.5861316!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428add1937a660d%3A0xebb65cb9ca16a54f!2sMicrotel%20Inn%20%26%20Suites%20by%20Wyndham%20Guadalajara%20Sur!5e1!3m2!1ses!2sus!4v1748973034556!5m2!1ses!2sus',
     mapDescription: 'Hotel cómodo ubicado dentro del centro comercial La Gourmetería, ideal para eventos sociales y acceso rápido a la zona sur de Guadalajara.',
     amenities: [
       { key: 'vending', value: 'Mini Store 24/7 en front desk' },
