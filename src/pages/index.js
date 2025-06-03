@@ -159,7 +159,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex justify-center border-t pt-16">
+            <div className="flex lg:hidden justify-center border-t pt-16">
               <div className="flex w-full lg:w-1/3 justify-center mx-auto">
                 <div id="form" className="mb-20">
                   <div className="w-full mb-8 p-8 rounded-2xl shadow-lg bg-white">
