@@ -74,7 +74,7 @@ export const DataAtlas = [
     id: 'gdl',
     sede: 'Guadalajara Sur',
     description: `Se encuentra en La Gourmeteria. Centro comercial dedicado a la recreación y gastronomía. Restaurantes, bar (Sala de despecho), cine, gimnasio.<br/><br/>Se encuentra en el sur de la ciudad de Guadalajara muy cercano a múltiples terrazas y salones de eventos, lo que nos permite otorgar hospedaje a personas tanto foráneas como locales para eventos en dichos salones y terrazas cercanos al hotel.<br/><br/>Cercano a lienzos Charros en Tlajomulco de Zuñiga donde se celebran encuentros charros anualmente.<br/><br/>Mini Store 24/7 en front desk. Venta de refrescos, botanas, dulces así como artículos de higiene personal y medicamento básico.<br/><br/>Vending Machine`,
-    url: 'https://www.wyndhamhotels.com/es-xl/microtel/guadalajara-mexico/microtel-inn-and-suites-by-wyndham-guadalajara-sur/rooms-rates',
+    url: 'https://www.wyndhamhotels.com/es-xl/microtel/guadalajara-mexico/microtel-inn-and-suites-guadalajara-sur/rooms-rates',
     street: 'Av. López Mateos Sur 1710',
     neighborhood: 'La Gourmetería, Tlajomulco',
     cp: '45645',
