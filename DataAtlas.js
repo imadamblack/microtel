@@ -73,7 +73,7 @@ export const DataAtlas = [
   {
     id: 'gdl',
     sede: 'Guadalajara Sur',
-    description: `Se encuentra en La Gourmeteria. Centro comercial dedicado a la recreación y gastronomía. Restaurantes (actualmente 4), bar (Sala de despecho), cine, gimnasio.<br/><br/>Se encuentra en el sur de la ciudad de Guadalajara muy cercano a múltiples terrazas y salones de eventos, lo que nos permite otorgar hospedaje a personas tanto foráneas como locales para eventos en dichos salones y terrazas cercanos al hotel.<br/><br/>Cercano a lienzos Charros en Tlajomulco de Zuñiga donde se celebran encuentros charros anualmente.<br/><br/>Mini Store 24/7 en front desk (excepto SLP). Venta de refrescos, botanas, dulces así como artículos de higiene personal y medicamento básico.<br/><br/>Vending Machine`,
+    description: `Se encuentra en La Gourmeteria. Centro comercial dedicado a la recreación y gastronomía. Restaurantes, bar (Sala de despecho), cine, gimnasio.<br/><br/>Se encuentra en el sur de la ciudad de Guadalajara muy cercano a múltiples terrazas y salones de eventos, lo que nos permite otorgar hospedaje a personas tanto foráneas como locales para eventos en dichos salones y terrazas cercanos al hotel.<br/><br/>Cercano a lienzos Charros en Tlajomulco de Zuñiga donde se celebran encuentros charros anualmente.<br/><br/>Mini Store 24/7 en front desk. Venta de refrescos, botanas, dulces así como artículos de higiene personal y medicamento básico.<br/><br/>Vending Machine`,
     url: 'https://www.wyndhamhotels.com/es-xl/microtel/guadalajara-mexico/microtel-inn-and-suites-by-wyndham-guadalajara-sur/rooms-rates',
     street: 'Av. López Mateos Sur 1710',
     neighborhood: 'La Gourmetería, Tlajomulco',
@@ -87,7 +87,7 @@ export const DataAtlas = [
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.4943520948136!2d-103.4488361015852!3d20.586878901850287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842f54b8dc35bb6f%3A0xc5acad50c63f0fee!2sMicrotel%20Inn%20%26%20Suites%20by%20Wyndham%20Guadalajara%20Sur!5e0!3m2!1ses!2smx!4v1748705700000!5m2!1ses!2smx',
     mapDescription: 'Hotel cómodo ubicado dentro del centro comercial La Gourmetería, ideal para eventos sociales y acceso rápido a la zona sur de Guadalajara.',
     amenities: [
-      { key: 'vending', value: 'Mini Store 24/7 en front desk (excepto SLP)' },
+      { key: 'vending', value: 'Mini Store 24/7 en front desk' },
       { key: 'vending', value: 'Vending Machine' },
       { key: 'wifi', value: 'Wifi sin costo para huéspedes.' },
       { key: 'lavanderia', value: 'Servicio de lavandería y tintorería.' },
