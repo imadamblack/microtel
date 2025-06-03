@@ -1,3 +1,4 @@
+import Image from 'next/image';
 
 export default function ModalPhotoGallery({sede, onClose}) {
 
@@ -14,10 +15,12 @@ export default function ModalPhotoGallery({sede, onClose}) {
         >✕</div>
         <div className="relative my-40 gap-8 grid grid-cols-1 md:grid-cols-2">
           {images.map((src, idx) => (
-            <div className="w-full flex snap-center">
-              <img
+            <div className="relative w-full pt-[56%] flex snap-center">
+              <Image
                 key={idx}
                 src={src}
+                layout="fill"
+                loading="lazy"
                 alt={`${sede} ${idx + 1}`}
                 className="object-cover object-center"
               />

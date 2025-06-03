@@ -98,15 +98,17 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-4">
             <div className="relative flex bg-gray-100 shadow pt-[100%]">
               <div onClick={() => setOpenPhotoModal(true)} className="absolute inset-0 flex cursor-pointer overflow-hidden">
-                <img src={`/imgSlider/00.jpg`} className="object-cover object-center"/>
+                <Image src={`/imgSlider/00.jpg`} layout="fill" className="object-cover object-center"/>
               </div>
             </div>
             <div className="grid grid-cols-2 grid-rows-2 gap-4">
               {images.map((src, idx) => (
-                <div onClick={() => setOpenPhotoModal(true)} className="flex bg-gray-100 cursor-pointer overflow-hidden">
-                  <img
+                <div onClick={() => setOpenPhotoModal(true)} className="relative flex bg-gray-100 cursor-pointer overflow-hidden">
+                  <Image
                     key={idx}
                     src={src}
+                    layout="fill"
+                    loading="lazy"
                     alt={`Imagen ${idx + 1}`}
                     className="object-cover object-center"
                   />
@@ -120,14 +122,16 @@ export default function Home() {
       <section className="lg:hidden">
         <div className="relative flex h-[50vh] w-full overflow-x-scroll snap-x snap-mandatory">
           <div className="w-max relative flex">
-            <div className="w-[90vw] h-[50vh] flex cursor-pointer snap-center">
-              <img src={`/imgSlider/${id}/00.jpg`} className="object-cover object-center"/>
+            <div className="relative w-[90vw] h-[50vh] flex cursor-pointer snap-center">
+              <Image src={`/imgSlider/00.jpg`} layout="fill" className="object-cover object-center"/>
             </div>
             {mobileImages.map((src, idx) => (
-              <div className="w-[90vw] h-[50vh] flex cursor-pointer snap-center">
-                <img
+              <div className="relative w-[90vw] h-[50vh] flex cursor-pointer snap-center">
+                <Image
                   key={idx}
                   src={src}
+                  layout="fill"
+                  loading="lazy"
                   alt={`Imagen ${idx + 1}`}
                   className="object-cover object-center"
                 />
@@ -146,12 +150,28 @@ export default function Home() {
                 <p className="mt-4">{rate} <span className="text-yellow-400">{stars}</span> | {ratings} Reviews</p>
               </div>
               <div className="hidden lg:flex items-center lg:w-1/3">
-                  <button
-                    className="flex bg-brand-2 text-brand-1 hover:text-white rounded-full border border-yellow-500 shadow-md h-[4rem] px-8 items-center w-full"
-                    onClick={() => setOpenSedeSelector(true)}
-                  >
-                    <p className="-ft-1 font-medium">¿Vas a otra ciudad?</p>
-                  </button>
+                <button
+                  className="flex bg-brand-2 text-brand-1 hover:text-white rounded-full border border-yellow-500 shadow-md h-[4rem] px-8 items-center w-full"
+                  onClick={() => setOpenSedeSelector(true)}
+                >
+                  <p className="-ft-1 font-medium">¿Vas a otra ciudad?</p>
+                </button>
+              </div>
+            </div>
+
+            <div className="flex justify-center border-t pt-16">
+              <div className="flex w-full lg:w-1/3 justify-center mx-auto">
+                <div id="form" className="mb-20">
+                  <div className="w-full mb-8 p-8 rounded-2xl shadow-lg bg-white">
+                    <p className="condensed font-bold text-center">🚨 Reserva en este sitio y obtén la mejor tarifa</p>
+                  </div>
+                  <div className="w-full p-8 rounded-2xl shadow-lg bg-white">
+                    <OptInForm
+                      city={sedeInfo.id}
+                      onSedeChange={handleSedeChange}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -173,7 +193,8 @@ export default function Home() {
                 <div className="w-2/3 mx-auto flex-grow">
                   <img src="/landing/icon-1.png" className="w-2/3 mx-auto"/>
                 </div>
-                <p className="tracking-tight text-center mt-8">Mismo servicio y confianza en cualquier destino que nos visites.</p>
+                <p className="tracking-tight text-center mt-8">Mismo servicio y confianza en cualquier destino que nos
+                  visites.</p>
               </div>
             </div>
 
