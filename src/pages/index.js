@@ -198,6 +198,37 @@ export default function Home() {
               </div>
             </div>
 
+            <div className="flex flex-col gap-12 border-b py-16 w-full">
+              <div className="w-full flex flex-col md:flex-row items-center gap-8">
+                <div className="w-1/3 md:w-1/6">
+                  <div className="relative w-2/3 mx-auto pt-[100%]">
+                    <Image src="/icons/breakfast.png" layout="fill" className="object-center object-contain"/>
+                  </div>
+                </div>
+                <div className="flex-grow md:w-5/6">
+                  <p className="font-medium">Desayuno buffet en cortesía</p>
+                  <p className="-ft-2">{
+                    id === 'slp'
+                      ? 'Desayuno Buffet en cortesía (Amplio, variado, continuo y rotativo). En horario de Lun a Vie 6:00 a 10:30 am y Sab-Dom de 7:00 a 11:30am'
+                      : 'Desayuno Buffet en cortesía (Amplio, variado, continuo y rotativo). En horario de Lun a Vie 6:30 a 10:30 am y Sab-Dom de 7:00 a 11:30am'
+                  }
+                  </p>
+                </div>
+              </div>
+              <div className="w-full flex flex-col md:flex-row items-center gap-8">
+                <div className="w-1/3 md:w-1/6">
+                  <div className="relative w-2/3 mx-auto pt-[100%]">
+                    <Image src="/icons/location.png" layout="fill" className="object-center object-contain"/>
+                  </div>
+                </div>
+                <div className="flex-grow md:w-5/6">
+                  <p className="font-medium">En ubicaciones estratégicas de la ciudad</p>
+                  <p className="-ft-2">Nuestros hoteles están ubicados en zonas industriales, de eventos o cerca de
+                    aeropuertos</p>
+                </div>
+              </div>
+            </div>
+
             <div id="description" className="border-y py-16 w-full">
               <p dangerouslySetInnerHTML={{__html: description}}/>
             </div>
@@ -249,12 +280,12 @@ export default function Home() {
             className="flex w-full lg:w-1/6 bg-brand-2 text-brand-1 rounded-lg border border-green-800 shadow-xl h-[4.2rem] px-8 items-center">
             <a href="#form" className="-ft-1 w-full text-center font-medium">Selecciona tus fechas</a>
           </div>
-          </div>
+        </div>
       </section>
 
       <section className="container border-t py-20">
         <div className="md:w-1/3 mx-auto">
-        <p className="ft-xxl font-bold text-center mb-8">4.5 ⭐</p>
+          <p className="ft-xxl font-bold text-center mb-8">4.5 ⭐</p>
           <p className="text-center">De calificación en nuestras reseñas.</p>
         </div>
         <ReviewList/>
