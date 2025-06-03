@@ -13,7 +13,7 @@ export const DataAtlas = [
     rate: 4.6,
     stars: '★★★★',
     ratings: 163,
-    mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.720206097937!2d-100.905867!3d22.1122918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa381f6100001%3A0x60c10430967dd9a9!2sMicrotel%20Inn%20%26%20Suites%20by%20Wyndham%20S.L.P.!5e0!3m2!1ses!2smx!4v1748705100000!5m2!1ses!2smx',
+    mapUrl: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4817.780648240405!2d-100.8981422!3d22.1122771!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa381f6100001%3A0x60c10430967dd9a9!2sMicrotel%20Inn%20%26%20Suites%20by%20Wyndham%20S.L.P.!5e1!3m2!1ses!2sus!4v1748973090994!5m2!1ses!2sus',
     mapDescription: 'Hotel práctico ubicado en la zona industrial de San Luis Potosí, ideal para viajeros de negocios que visitan plantas como GM o BMW. Cuenta con acceso a Starbucks y restaurante The Hub del hotel contiguo.',
     amenities: [
       { key: 'room-service', value: 'Room Service con menú a la carta (otorgado por Ramada Encore)' },
