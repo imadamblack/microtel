@@ -163,7 +163,7 @@ export default function Home() {
               <div className="flex w-full lg:w-1/3 justify-center mx-auto">
                 <div id="form" className="mb-20">
                   <div className="w-full mb-8 p-8 rounded-2xl shadow-lg bg-white">
-                    <p className="condensed font-bold text-center">🚨 Reserva en este sitio y obtén la mejor tarifa</p>
+                    <p className="condensed font-bold text-center">🚨 Reserva aquí y obtén la mejor tarifa</p>
                   </div>
                   <div className="w-full p-8 rounded-2xl shadow-lg bg-white">
                     <OptInForm
@@ -181,7 +181,7 @@ export default function Home() {
                 <div className="w-2/3 mx-auto flex-grow flex">
                   <img src="/landing/icon-2.png" className="w-full m-auto"/>
                 </div>
-                <p className="tracking-tight text-center mt-8">Plan de recompensas Wyndham Rewards</p>
+                <p className="tracking-tight text-center mt-8">Plan de lealtad Wyndham Rewards</p>
               </div>
               <div className="w-full flex flex-col p-8">
                 <div className="w-2/5 mx-auto flex flex-grow">
@@ -217,9 +217,11 @@ export default function Home() {
               </div>
               <div className="w-full flex flex-col md:flex-row items-center gap-8">
                 <div className="w-1/3 md:w-1/6">
+                  <a href="#form">
                   <div className="relative w-2/3 mx-auto pt-[100%]">
                     <Image src="/icons/location.png" layout="fill" className="object-center object-contain"/>
                   </div>
+                  </a>
                 </div>
                 <div className="flex-grow md:w-5/6">
                   <p className="font-medium">En ubicaciones estratégicas de la ciudad</p>
@@ -256,7 +258,7 @@ export default function Home() {
         <div className="ml-auto hidden lg:block md:w-1/3">
           <div className="sticky top-36 mb-20">
             <div className="w-full mb-8 p-8 rounded-2xl shadow-lg bg-white">
-              <p className="condensed font-bold text-center">🚨 Reserva en este sitio y obtén la mejor tarifa</p>
+              <p className="condensed font-bold text-center">🚨 Reserva aquí y obtén la mejor tarifa</p>
             </div>
             <div className="w-full p-8 rounded-2xl shadow-lg bg-white">
               <OptInForm
@@ -316,7 +318,7 @@ export default function Home() {
         <div className="flex w-full lg:w-1/3 justify-center mx-auto">
           <div id="form" className="mb-20">
             <div className="w-full mb-8 p-8 rounded-2xl shadow-lg bg-white">
-              <p className="condensed font-bold text-center">🚨 Reserva en este sitio y obtén la mejor tarifa</p>
+              <p className="condensed font-bold text-center">🚨 Reserva aquí y obtén la mejor tarifa</p>
             </div>
             <div className="w-full p-8 rounded-2xl shadow-lg bg-white">
               <OptInForm

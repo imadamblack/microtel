@@ -123,15 +123,15 @@ export default function OptInForm({city, lastClick = '', onSedeChange}) {
           className={errors.phone && '!bg-red-200'}
           onKeyDown={restrictNumber}
           placeholder="Teléfono de WhatsApp"/>
-        <input
-          {...register(
-            'adults',
-            {required: true},
-          )}
-          type="number"
-          className={errors.phone && '!bg-red-200'}
-          onKeyDown={restrictNumber}
-          placeholder="Huéspedes"/>
+        {/*<input*/}
+        {/*  {...register(*/}
+        {/*    'adults',*/}
+        {/*    {required: true},*/}
+        {/*  )}*/}
+        {/*  type="number"*/}
+        {/*  className={errors.phone && '!bg-red-200'}*/}
+        {/*  onKeyDown={restrictNumber}*/}
+        {/*  placeholder="Huéspedes"/>*/}
 
         <Select
           name="city"

@@ -1,9 +1,12 @@
-import { info } from '../../info';
 import { useRouter } from 'next/router';
+import { getCookie } from 'cookies-next';
+import { DataAtlas } from '../../DataAtlas';
 
-export default function ThankYou() {
+export default function ThankYou({city}) {
   const router = useRouter();
   const {query} = router;
+
+  const {whatsapp} = DataAtlas.find((sede) => sede.id === city);
 
   return (
     <section className="relative flex flex-col flex-grow justify-center pt-20 px-0">
@@ -22,7 +25,8 @@ export default function ThankYou() {
           </a>
           <a
             className="ft-2 py-3 px-6 rounded-lg items-center"
-            href={`https://wa.me/${info.whatsapp.value}`}
+            href={`https://wa.me/${whatsapp}`}
+            target="_blank"
           >
             <p className="text-green-600">
               O contáctanos por <span className="font-semibold">WhatsApp</span>
@@ -32,4 +36,15 @@ export default function ThankYou() {
       </div>
     </section>
   );
+}
+
+export async function getServerSideProps(ctx) {
+  const {req, res} = ctx;
+  const leadCookie = getCookie('lead', {req, res}) || '{}';
+
+  const lead = JSON.parse(leadCookie);
+
+  return {
+    props: {city: lead.city || 'slp'},
+  };
 }
