@@ -284,14 +284,6 @@ export default function Home() {
       </section>
 
       <section className="container border-t py-20">
-        <div className="md:w-1/3 mx-auto">
-          <p className="ft-xxl font-bold text-center mb-8">4.5 ⭐</p>
-          <p className="text-center">De calificación en nuestras reseñas.</p>
-        </div>
-        <ReviewList/>
-      </section>
-
-      <section className="container border-t py-20">
         <h2 className="mb-16">Donde vas a estar</h2>
         <Mapa
           ciudad={city}
@@ -301,6 +293,14 @@ export default function Home() {
           UrlMap={mapUrl}
           comentario={mapDescription}
         />
+      </section>
+
+      <section className="container border-t py-20">
+        <div className="md:w-1/3 mx-auto">
+          <p className="ft-xxl font-bold text-center mb-8">4.5 ⭐</p>
+          <p className="text-center">De calificación en nuestras reseñas.</p>
+        </div>
+        <ReviewList/>
       </section>
 
       <section className="container border-t py-20">
