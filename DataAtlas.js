@@ -20,6 +20,7 @@ export const DataAtlas = [
       { key: 'buffet', value: 'Desayuno Buffet en cortesía' },
       { key: 'room-service', value: 'Room Service' },
       { key: 'gym', value: 'Gimnasio' },
+      { key: 'alberca', value: 'Alberca ejecutiva techada y climatizada' },
       { key: 'wifi', value: 'Wifi' },
       { key: 'blackout', value: 'Habitaciones Black Out total' },
       { key: 'almohada', value: 'Menú de Almohadas' },
@@ -30,7 +31,6 @@ export const DataAtlas = [
       { key: 'estacion-carga', value: 'Centro de carga de automóviles eléctricos' },
       // { key: 'cafeteria', value: 'Sucursal Starbucks dentro del estacionamiento' },
       // { key: 'cafeteria', value: 'Cafetera y kit de café en habitación.' },
-      // { key: 'alberca', value: 'Alberca ejecutiva techada y climatizada' },
       // { key: 'llamadas', value: 'Llamadas telefónicas locales y nacionales a números fijos y móviles sin costo.' },
       // { key: 'musica', value: 'Música ambiental de género pop 90s y 2000s en inglés' }
     ]
