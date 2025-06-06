@@ -217,7 +217,7 @@ export default function Home() {
               </div>
               <div className="w-full flex flex-col md:flex-row items-center gap-8">
                 <div className="w-1/3 md:w-1/6">
-                  <a href="#form">
+                  <a href="#map">
                   <div className="relative w-2/3 mx-auto pt-[100%]">
                     <Image src="/icons/location.png" layout="fill" className="object-center object-contain"/>
                   </div>
@@ -285,7 +285,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container border-t py-20">
+      <section id="map" className="container border-t py-20">
         <h2 className="mb-16">Donde vas a estar</h2>
         <Mapa
           ciudad={city}
