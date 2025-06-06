@@ -13,7 +13,6 @@ import ModalPhotoGallery from '../components/photoModal';
 
 
 export default function Home() {
-  const [lastClick, setLastClick] = useState('');
   const router = useRouter();
   const {pathname} = router;
   const [sedeInfo, setSedeInfo] = useState(() => {

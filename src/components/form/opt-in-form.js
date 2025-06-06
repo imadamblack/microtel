@@ -29,7 +29,7 @@ export default function OptInForm({city, lastClick = '', onSedeChange}) {
     const _fbp = getCookie('_fbp');
     const payload = {...data, _fbc, _fbp};
 
-    const found = DataAtlas.find((sede) => sede.id === data.city);
+    const found = DataAtlas.find((sede) => sede.id === city);
 
     const forwardUrl = `${found.url}?${urlQueryToSearchParams({
       checkInDate: data.checkInDate,
