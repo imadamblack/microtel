@@ -5,19 +5,19 @@ export default function fbEvent(
   userData = {
     phone: '',
     email: '',
-    externalID: ''
+    externalID: '',
   },
-  eventID = Date.now()
+  eventID = Date.now(),
 ) {
   const payload = JSON.stringify({
     eventName,
     eventID,
     user: {
-      ph: userData.phone,
-      em: userData.email,
-      externalID: userData.externalID
+      ph: userData.phone || '',
+      em: userData.email || '',
+      externalID: userData.externalID,
     },
-  })
+  });
 
   fbq('track', eventName, {fbc: getCookie('_fbc'), eventID: eventID});
 
@@ -25,9 +25,9 @@ export default function fbEvent(
     method: 'POST',
     body: payload,
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
     },
   })
     .then((res) => res.json())
-    .catch(err => console.log(err))
+    .catch(err => console.log(err));
 }
