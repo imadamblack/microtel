@@ -19,7 +19,7 @@ export default function fbEvent(
     },
   })
 
-  fbq('track', eventName, {fbc: getCookie('_fbc')}, {eventID});
+  fbq('track', eventName, {fbc: getCookie('_fbc'), eventID: eventID});
 
   return fetch(`/api/fb-event`, {
     method: 'POST',
