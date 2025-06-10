@@ -11,19 +11,18 @@ import ModalSedeSelector from '../components/sedeSelector';
 import { useSedeSelector } from '../context/SedeSelectorContext';
 import ModalPhotoGallery from '../components/photoModal';
 
-
-export default function Home() {
+export default function Home({urlSede}) {
   const router = useRouter();
   const {pathname} = router;
   const [sedeInfo, setSedeInfo] = useState(() => {
-    return DataAtlas.find((sede) => sede.id === 'slp');
+    return DataAtlas.find((sede) => sede.id === urlSede);
   });
   const { openSedeSelector, setOpenSedeSelector } = useSedeSelector();
   const [openPhotoModal,setOpenPhotoModal] = useState(false)
 
   const handleSedeChange = (sedeId) => {
     const found = DataAtlas.find((sede) => sede.id === sedeId) ||
-      DataAtlas.find((sede) => sede.id === 'slp');
+      DataAtlas.find((sede) => sede.id === urlSede);
     setSedeInfo(found);
 
     router.replace({
@@ -42,7 +41,7 @@ export default function Home() {
     if (sedeId) {
       handleSedeChange(sedeId);
     } else {
-      handleSedeChange('slp');
+      handleSedeChange(urlSede);
     }
   }, [router.isReady, router.query.sede]);
 
@@ -331,4 +330,10 @@ export default function Home() {
 
     </>
   );
+}
+
+export async function getServerSideProps(ctx) {
+  const urlSede = ctx.query;
+
+  return urlSede && {props: {urlSede}}
 }
