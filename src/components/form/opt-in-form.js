@@ -27,7 +27,9 @@ export default function OptInForm({city, lastClick = '', onSedeChange}) {
 
     const _fbc = getCookie('_fbc');
     const _fbp = getCookie('_fbp');
-    const payload = {...data, _fbc, _fbp};
+    const utmCookie = getCookie('lead_utm');
+    const utm = JSON.parse(utmCookie);
+    const payload = {...data, _fbc, _fbp, ...utm};
 
     const found = DataAtlas.find((sede) => sede.id === city);
 
@@ -35,6 +37,7 @@ export default function OptInForm({city, lastClick = '', onSedeChange}) {
       checkInDate: data.checkInDate,
       checkOutDate: data.checkOutDate,
       adults: data.adults,
+      utm_source: 'notoriovs',
     })}`;
 
     fetch(info.optInWebhook, {
