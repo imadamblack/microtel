@@ -334,7 +334,7 @@ export default function Home({urlSede}) {
 
 export async function getServerSideProps(ctx) {
   const urlSede = ctx.query;
-  const sede = urlSede.sede === '' ? 'slp' : urlSede.sede;
+  const sede = urlSede.sede === '' || urlSede.sede === undefined || urlSede.sede === null ? 'slp' : urlSede.sede;
 
   return urlSede && {props: {urlSede: sede}};
 }
