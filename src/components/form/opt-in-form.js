@@ -33,7 +33,7 @@ export default function OptInForm({city, lastClick = '', onSedeChange}) {
 
     const found = DataAtlas.find((sede) => sede.id === city);
 
-    const forward = `${found.url}?${urlQueryToSearchParams({
+    const forward = `${found.url}&${urlQueryToSearchParams({
       checkInDate: data.checkInDate,
       checkOutDate: data.checkOutDate,
       adults: data.adults,
